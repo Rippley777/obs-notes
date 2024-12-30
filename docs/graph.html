@@ -53,7 +53,16 @@
         return fileContents;
       }
 
-      fetchFilesFromRepo("Rippley777", "obs-notes", "main").then(console.log);
+      fetchFilesFromRepo("Rippley777", "obs-notes", "main").then((files) => {
+        return files.map((file) => {
+          const links = file.content.match(/\[\[(.*?)\]\]/g);
+          return {
+            name: file.name,
+            content: file.content,
+            links: links ? links.map((link) => link.slice(2, -2)) : [],
+          };
+        });
+      });
 
       const nodes = {};
       const textGroup = new THREE.Group();

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cytoscape Graph</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.21.1/cytoscape.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        background-color: #1e1e1e;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+      }
+      #cy {
+        width: 100vw;
+        height: 100vh;
+        display: block;
+      }
+      h1 {
+        text-align: center;
+        color: limegreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cy"></div>
+
+    <script>
+      const API_URL = `https://api.github.com/repos/Rippley777/obs-notes/contents?ref=main`;
+      async function fetchRepoFilesRecursively(url) {
+        const response = await fetch(url);
+        if (!response.ok)
+          throw new Error(`Error fetching data: ${response.status}`);
+        const items = await response.json();
+
+        const files = [];
+        for (const item of items) {
+          if (item.type === "file" && item.name.endsWith(".md")) {
+            files.push(item);
+          } else if (item.type === "dir") {
+            const subFiles = await fetchRepoFilesRecursively(item.url);
+            files.push(...subFiles);
+          }
+        }
+        return files;
+      }
+      async function fetchRepoFiles() {
+        return await fetchRepoFilesRecursively(API_URL);
+      }
+      async function fetchFileContent(fileUrl) {
+        const response = await fetch(fileUrl);
+        debugger;
+        if (!response.ok)
+          throw new Error(`Error fetching file: ${response.status}`);
+        return await response.text();
+      }
+
+      function parseLinks(content) {
+        const regex = /\[\[([^\]]+)\]\]/g;
+        const links = [];
+        let match;
+        while ((match = regex.exec(content)) !== null) {
+          links.push(match[1]);
+        }
+        return links;
+      }
+
+      async function buildGraphData() {
+        const files = await fetchRepoFiles();
+        const graphData = { nodes: [], edges: [] };
+        const nodeSet = new Set();
+
+        for (const file of files) {
+          const fileName = file.name.replace(".md", "");
+          if (!nodeSet.has(fileName)) {
+            graphData.nodes.push({ data: { id: fileName, label: fileName } });
+            nodeSet.add(fileName);
+          }
+
+          const content = await fetchFileContent(file.download_url);
+          const links = parseLinks(content);
+
+          for (const link of links) {
+            if (!nodeSet.has(link)) {
+              graphData.nodes.push({ data: { id: link, label: link } });
+              nodeSet.add(link);
+            }
+            graphData.edges.push({ data: { source: fileName, target: link } });
+          }
+        }
+
+        return graphData;
+      }
+
+      async function renderGraph() {
+        const graphData = await buildGraphData();
+
+        const cy = cytoscape({
+          container: document.getElementById("cy"),
+          elements: [...graphData.nodes, ...graphData.edges],
+          style: [
+            {
+              selector: "node",
+              style: {
+                "background-color": "limegreen",
+                width: "10px",
+                height: "10px",
+                label: "data(label)",
+                color: "#ffffff",
+                "font-size": "10px",
+                "text-valign": "center",
+                "text-halign": "center",
+              },
+            },
+            {
+              selector: "edge",
+              style: {
+                width: 2,
+                "line-color": "#4CAF50",
+                "target-arrow-color": "#4CAF50",
+                "target-arrow-shape": "triangle",
+                "curve-style": "bezier",
+              },
+            },
+          ],
+          layout: {
+            name: "cose",
+            animate: true,
+          },
+          background: "#1e1e1e",
+        });
+
+        cy.on("mouseover", "node", (event) => {
+          const node = event.target;
+          node.style("background-color", "#00FF00");
+        });
+
+        cy.on("mouseout", "node", (event) => {
+          const node = event.target;
+          node.style("background-color", "limegreen");
+        });
+      }
+
+      renderGraph().catch((err) => {
+        console.error("Error rendering graph:", err);
+        document.body.innerHTML = `<h1>Error: Unable to load graph. Check console for details.</h1>`;
+      });
+    </script>
+  </body>
+</html>
