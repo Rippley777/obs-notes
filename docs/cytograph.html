@@ -50,7 +50,6 @@
       }
       async function fetchFileContent(fileUrl) {
         const response = await fetch(fileUrl);
-        debugger;
         if (!response.ok)
           throw new Error(`Error fetching file: ${response.status}`);
         return await response.text();
