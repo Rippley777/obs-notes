@@ -1,0 +1,2 @@
+- Use unique IDs or timestamps in note titles to reference ideas (e.g., `20241229-Idea`).
+- Create atomic notes and link ideas using `[[Note Name]]`.

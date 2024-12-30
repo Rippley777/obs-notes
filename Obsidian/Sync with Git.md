@@ -1,0 +1,3 @@
+- Automate Git commits and pushes to keep your vault version-controlled.
+- Example Workflow:
+    - Use `cron` or a scheduled task to sync changes daily.

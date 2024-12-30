@@ -1,0 +1,3 @@
+- **Backlinks**: See which notes link to your current note in the right sidebar.
+- **Outgoing Links**: Use the **Outgoing Links** plugin to display all links leaving the current note.
+- **How to Enable**: Go to `Settings > Core Plugins > Backlinks` and enable it.

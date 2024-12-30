@@ -1,0 +1,2 @@
+- Experiment with the **Canvas Plugin** for visual brainstorming.
+- Create mind maps or flowcharts directly in Obsidian using cards and links.

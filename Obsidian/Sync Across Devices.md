@@ -1,0 +1,2 @@
+- Use **Obsidian Sync** (paid) or third-party solutions like **Google Drive**, **Git**, or **Syncthing** for cross-device syncing.
+- If using Git, automate commits and pushes with scripts.
