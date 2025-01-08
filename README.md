@@ -1,4 +1,4 @@
-# Attempting Graph Integration
+# Online Graph Representation
 
 [![Graph](./docs/cytograph0.0.1.png)](https://Rippley777.github.io/obs-notes/cytograph.html)
 

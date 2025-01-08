@@ -5,6 +5,9 @@ find / -type f -name "*.log" 2>/dev/null | wc -l
 -get installed pkgs
 dpkg -l | grep '^ii' | wc -l
 
+xxd
+
+bindwalk -Me  recursive 
 
 cut
 cat /etc/passwd | grep -v "false\|nologin" | cut -d":" -f1
