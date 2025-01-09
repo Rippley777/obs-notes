@@ -1,0 +1,4 @@
+- **Secure your own access** with strong SSH keys and disable password authentication.
+- **Keep software updated** to patch any vulnerabilities.
+- **Implement backups** in case something goes awry.
+- **Harden the system** with basic security measures (e.g., a firewall like `ufw`).

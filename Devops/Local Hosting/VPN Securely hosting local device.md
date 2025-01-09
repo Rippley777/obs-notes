@@ -4,7 +4,7 @@ To create a secure tunnel, you need a VPN server on your local network.
 
 #### **Option A: Use Your Router**
 
-- Many modern routers support built-in VPN server functionality (e.g., OpenVPN, WireGuard).
+- Many modern routers support built-in VPN server functionality (e.g., OpenVPN, [[WireGuard]]).
 - Log in to your router's admin panel.
 - Enable and configure the VPN server:
     - Specify VPN protocol (preferably WireGuard or OpenVPN for security and performance).
@@ -16,7 +16,7 @@ If your router doesn’t support VPN:
 
 - Set up a device (e.g., Raspberry Pi, Linux machine) to act as a VPN server.
 - Use software like:
-    - **WireGuard**: Lightweight and fast.
+    - **[[WireGuard]]**: Lightweight and fast.
     - **OpenVPN**: Well-supported and highly secure.
 - Configure port forwarding on your router to allow external access to the VPN server.
 
@@ -81,7 +81,7 @@ To securely route traffic from the internet to your home network without exposin
 - **Central Control**: Manage external access via the cloud endpoint, ensuring all traffic is filtered.
 
 
-
+### Potential Performance Factors
 ### **Factors Affecting Performance**
 
 1. **Latency**:
