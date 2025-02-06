@@ -19,8 +19,6 @@ Would you like to explore more C concepts, or shall we continue contemplating th
 
 ---
 
-[![Boots](https://storage.googleapis.com/qvault-webapp-dynamic-assets/profile_images/27a4e553-28eb-4762-acd9-b3e64684a3e8.jpeg)](https://www.boot.dev/u/malenation45)
-
 if we would have somehow done 3, we could have a builtin superposition in binary
 
 ---
