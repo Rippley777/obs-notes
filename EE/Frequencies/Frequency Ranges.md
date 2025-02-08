@@ -1,0 +1,7 @@
+- CB Radio: **27 MHz (HF)**
+- HAM Radio: **1.8 MHz – 50+ GHz** (depends on license class)
+- LoRa/Meshtastic: **433 MHz / 868 MHz / 915 MHz**
+- Walkie-Talkies (FRS/GMRS): **462-467 MHz**
+- Cellular (2G/3G/4G/5G): **700 MHz – 3.5 GHz**
+- Wi-Fi & Bluetooth: **2.4 GHz & 5 GHz**
+- Satellite: **1 GHz – 30 GHz**

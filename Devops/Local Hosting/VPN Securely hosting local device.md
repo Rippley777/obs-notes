@@ -40,11 +40,7 @@ To securely route traffic from the internet to your home network without exposin
 
 1. Set up a reverse SSH tunnel from your home network to the cloud VM.
     - Example command:
-        
-        bash
-        
-        Copy code
-        
+     
         `ssh -N -R 1234:localhost:22 user@cloud-vm`
         
     - Replace `1234` with the desired port number and `user@cloud-vm` with your cloud VM credentials.
@@ -105,7 +101,7 @@ To securely route traffic from the internet to your home network without exposin
 
 ### **Best Practices to Minimize Performance Impact**
 
-1. **Use WireGuard for VPN**:
+1. **Use [[WireGuard]] for VPN**:
     
     - It’s faster and more efficient than OpenVPN or IPSec.
 2. **Optimize VM Specs**:

@@ -46,7 +46,8 @@
 - **React Query**: A powerful tool for fetching, caching, and updating asynchronous data in React applications. It reduces the need to manage server state in your client-side application.
     
 - **Formik**: A library that helps with building and managing forms in React. It handles form state, validation, and submission, making form handling much easier.
-    
+    **React Virtual**: This tool offers utilities for virtualizing scrollable elements in React applications, which is particularly useful for improving the performance of large lists and tables.
+**React Location**: This is a modern router for React. It provides several features for query management and asynchronous data loading that are essential for building complex single-page applications.
 - **Testing Libraries**:
     
     - **Jest**: A testing framework that works well with React for running unit tests.
@@ -78,7 +79,7 @@
 - **Next.js or Gatsby**: These are frameworks built on top of React, providing additional features and capabilities such as server-side rendering, static site generation, and routing to simplify React application development.
     
 - **Storybook**: A tool for developing UI components in isolation for React applications, Storybook allows developers to showcase UI components and their variations in a separate environment, making development and testing easier.
-
+- **Firebase**: A platform by Google that provides various services such as authentication, database, and hosting, which can be easily integrated into React applications.
 ## Charts
 
 ### **Chart.js**
