@@ -1,16 +1,18 @@
 
 ## Beginner
 
-### 1️⃣ **LED Blinker (Resistors + LEDs + Capacitors)**
+### 1️⃣ **[[LED Blinker (Resistors + LEDs + Capacitors)]]**
 
-### 2️⃣ **Simple Light-Activated Circuit (Photoresistors)**
+### 2️⃣ **[[Simple Light-Activated Circuit (Photoresistors)]]**
 
-### 3️⃣ **555 Timer LED Flasher (Intro to ICs + Timing Circuits)**
+### 3️⃣ **[[555 Timer LED Flasher (Intro to ICs + Timing Circuits)]]**
 
-### 4️⃣ **Transistor-Controlled Motor (Switching Basics)**
+### 4️⃣ **[[Transistor-Controlled Motor (Switching Basics)]]**
 
-### 5️⃣ **Capacitive Touch Sensor (Capacitors as Sensors)**
+### 5️⃣ **[[Capacitive Touch Sensor (Capacitors as Sensors)]]**
 
+Moving towards Intermediate:
+### 6 [[The Infinity Light (Joule Thief)]]
 
 ---
 
