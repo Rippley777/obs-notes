@@ -421,6 +421,6 @@ This **renders a 3D model on Apple Vision Pro**!
 
 ✅ **Load textures** for the model  
 ✅ **Support animations** (Skeletons, Morph Targets)  
-✅ **Build a complete[[ Rust-based AR framework]]**
+✅ **Build a complete[[Rust-Based AR Framework]]**
 
 

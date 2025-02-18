@@ -1,0 +1,1 @@
+![[ohms_law_equation.png]]![[current_limiting_equation.png]]![[voltage_dividing_equation.png]]

@@ -1,0 +1,3 @@
+- **Falstad Circuit Simulator** – Real-time interactive simulations.
+- EveryCircuit – Mobile-friendly circuit playground.
+- **LTspice** – Industry-standard for advanced analysis.
