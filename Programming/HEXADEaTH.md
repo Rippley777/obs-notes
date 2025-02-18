@@ -179,17 +179,30 @@ L1 Cache (64KB) → SUPER FAST!
 ```
 
 
-
-
-
-
-
-
 0x3C
 
-
-
 ScratchPad
+
+
+
+0x41 = 65 = A
+0x42
+0x43
+
+0x4F = 80 = O
+0x51 = 81 = P
+0x5F = 96 = Z?
+NO just bc its two behind "b", doesn't mean its Z because OF COURSE ASCII has to have special characters in between the upper and lower case 🙄
+
+0x5A = 90 = z
+
+91 \[
+92 \
+93 \]
+94 [space]
+85 _
+96 \`
+
 
 0xFF = 255
 16 * 15 = 240

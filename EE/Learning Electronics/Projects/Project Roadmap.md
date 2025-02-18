@@ -32,3 +32,43 @@
 4. **Move to ICs (555 Timer)** → Grasp timing circuits.
 5. **Sensors + Microcontrollers** → Start with LDRs, thermistors, or hall-effect sensors.
 6. **RF Components** → Inductors, oscillators, and coils (perfect for Tesla coils).
+
+
+## Intermediate
+
+### 🧠 **[[Brain-Computer Interface (BCI)]]**
+
+
+---
+
+### ⚡ **[[Wireless Energy Transfer Prototype]]** (Inspired by Tesla)
+
+
+---
+
+### 🌱 **[[Smart Environmental Monitoring Station]]**
+
+---
+
+### 🚀 **[[Custom Motion-Controlled Wearable]]**
+
+
+---
+
+### ⚙️ **[[High-Precision Lab Power Supply]]**
+
+
+
+---
+
+### 🎛️ **[[RF Energy & Brainwave Interaction Experiment]]**
+
+
+---
+
+### 🏠 **[[Smart Home Control Hub]]**
+
+
+---
+
+### 🛠️ **[[Advanced Capacitive Touch Interface]]**

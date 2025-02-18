@@ -1,0 +1,5 @@
+- **Core:** ADS1299IPAGR (EEG/ECG AFE)
+- **Motion:** ICM-42688-P (6-Axis IMU)
+- **Feedback:** DRV2605LDGSR (Haptic Driver)
+- **Wireless Data:** CC2652P1FRGZR (Bluetooth/Zigbee MCU)
+- **Application:** Create a brainwave-controlled interface for apps, games, or smart devices.

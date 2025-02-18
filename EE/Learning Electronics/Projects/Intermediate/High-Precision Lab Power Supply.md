@@ -1,0 +1,5 @@
+- **Voltage Regulation:** TPS7A4700RGWR (Ultra-Low Noise Regulator)
+- **Inductance Measurement:** LDC1612QDNTRQ1
+- **High-Voltage Switching:** UF4007, FDPF51N25, IRF530PBF
+- **Measurement Accuracy:** RN60C1004BRE6, RNF14FTD10K0, YR1B100KCC (Precision Resistors)
+- **Application:** Create a reliable power supply with adjustable voltage, current limiting, and digital readouts.
